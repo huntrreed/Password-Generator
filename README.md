@@ -9,5 +9,6 @@ Upon clicking "Generate", you will be given a random password to use which can h
 
 Below is an example of the layout of the webpage, and an example of a random password it's created. 
 
+![An image of the website](./Images/Generator-Screenshot)
 
 Stay safe! 
