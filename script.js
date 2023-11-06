@@ -1,16 +1,8 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-//var Uppercase = window.prompt("Do you want to include Uppercase letters?");
-//if (!userChoice){
-//   Y
-// }
 
-// var SpecialChar = window.prompt("Do you want to include special characters?");
-// if (!userChoice){
-
-//}
-
+//Prompts asking if you'd like your password to include special characters, uppercase letters, and numbers
 function generatePassword() {
 var validCharacters = ''
   var uppercase = window.confirm("Do you want to include uppercase letters?");
@@ -26,11 +18,12 @@ validCharacters += "!#$%^&*()@"
     validCharacters += "1234567890"
   }
 
-  // var length = window.propmt("How long do you want your password to be");
-  // if ("length") {
-  //   length += "length"
+  // var PasswordLength = window.prompt("How long do you want your password");
+  // if (numbers) {
+  //   PasswordLength += "i"
   // }
 
+ //code for generating password after prompts are answered
 
   var characters = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqurstuvwxyz1234567890!@#$%^&*()";
   var passwordLength = 12;
@@ -42,12 +35,11 @@ validCharacters += "!#$%^&*()@"
   return password;
 }
 
-
-
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password")
 
   passwordText.value = password;
 }
+//code for adding password only when generate button is clicked 
 generateBtn.addEventListener("click", writePassword);
