@@ -1,4 +1,5 @@
-# Password-Generator
+# Password-Generator 👩‍💻 🔑
+
 Passwords are an important security feature on any sensitive files or logging into any sensitive websites such as online banking, emails, messaging apps, and more. 
 
 Many people tend to use a password for these sensitive sites that is easy to guess, such as their birthday, their child's name, or the name of the street they live on. By using these easy to guess passwords for sensitive websites, web users open themselves to a higher possibility of their accounts being hacked which can lead to a multitude of issues from serious things such as identity theft and banking fraud to less serious, but still bad issues such as unauthorized users reading your emails or locking you out of your social media accounts. 
@@ -9,6 +10,6 @@ Upon clicking "Generate", you will be given a random password to use which can h
 
 Below is an example of the layout of the webpage, and an example of a random password it's created. 
 
-![An image of the website](./Images/Generator-Screenshot)
+![An image of the website](./Images/Generator-Screenshot.png)
 
-Stay safe! 
+Stay safe and keep your data protected!
