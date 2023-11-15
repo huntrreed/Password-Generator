@@ -8,8 +8,14 @@ One way to ensure you have a password that is difficult to guess is to use a ran
 
 Upon clicking "Generate", you will be given a random password to use which can help keep your information and data secure and avoid hackers guessing your passwords, giving them access to your private information. 
 
-Below is an example of the layout of the webpage, and an example of a random password it's created. 
+Below is an example of the layout of the webpage upon arrival at the webpage
+![Image of site](./Images/MainScreen.png)
 
-![An image of the website](./Images/Generator-Screenshot.png)
+ And here is an example of a random password it's created with 9 characters.
+
+![Image of password](/Images/withPassword.png)
+
+ and an example of a random password it's created. 
+
 
 Stay safe and keep your data protected!
