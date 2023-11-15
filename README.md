@@ -14,8 +14,8 @@ Below is an example of the layout of the webpage upon arrival at the webpage
  And here is an example of a random password it's created with 9 characters.
 
 ![Image of password](/Images/withPassword.png)
-
- and an example of a random password it's created. 
-
+ 
 
 Stay safe and keep your data protected!
+
+Link to the deployed web application: https://huntrreed.github.io/Password-Generator/
