@@ -3,19 +3,19 @@ var generateBtn = document.querySelector("#generate");
 
 //Prompts asking if you'd like your password to include special characters, uppercase letters, and numbers
 function generatePassword() {
-var validCharacters = ''
-
-var includeLowercase = window.confirm("Do you want to include lowercase letters?");
+  var validCharacters = '';
+  
+  var includeLowercase = window.confirm("Do you want to include lowercase letters?");
     if (includeLowercase) {
         validCharacters += "abcdefghijklmnopqrstuvwxyz";
     }
   var uppercase = window.confirm("Do you want to include uppercase letters?");
   if (uppercase) {
-validCharacters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    validCharacters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   }
   var SpecialChar = window.confirm("Do you want to include special characters?");
   if (SpecialChar) {
-validCharacters += "!#$%^&*()@"
+    validCharacters += "!#$%^&*()@"
   }
   var numbers = window.confirm("Do you want to include numbers?");
   if (numbers) {
@@ -35,21 +35,23 @@ if (passwordLength) {
 
 //code for generating password after prompts are answered
 
-var characters = "abcdefghijklmnopqrstuvwxyz" + validCharacters;
-var passwordLength = passwordLength - 1;
-var password = "";
-for (var i = 0; i <= passwordLength; i++) {
-  var randomNumber = Math.floor(Math.random() * characters.length);
-  password += characters.substring(randomNumber, randomNumber + 1);
-}
-return password;
+  if (validCharacters.length === 0) {
+    return "Oops! Please select at least one character type.";
+  }
+
+  var password = "";
+  for (var i = 0; i < passwordLength; i++) {
+    var randomNumber = Math.floor(Math.random() * validCharacters.length);
+    password += validCharacters.substring(randomNumber, randomNumber + 1);
+  }
+  return password;
 }
 
 function writePassword() {
-var password = generatePassword();
-var passwordText = document.querySelector("#password")
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password")
 
-passwordText.value = password;
+  passwordText.value = password;
 }
 
 //code for adding password only when generate button is clicked 
