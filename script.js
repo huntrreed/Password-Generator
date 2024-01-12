@@ -4,6 +4,11 @@ var generateBtn = document.querySelector("#generate");
 //Prompts asking if you'd like your password to include special characters, uppercase letters, and numbers
 function generatePassword() {
 var validCharacters = ''
+
+var includeLowercase = window.confirm("Do you want to include lowercase letters?");
+    if (includeLowercase) {
+        validCharacters += "abcdefghijklmnopqrstuvwxyz";
+    }
   var uppercase = window.confirm("Do you want to include uppercase letters?");
   if (uppercase) {
 validCharacters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
